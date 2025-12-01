@@ -1,57 +1,31 @@
-# Análise da API
+# Museu Mobile – Explorador da Coleção The Met
 
-## URL da documentação 
-#### https://github.com/metmuseum/openaccess?tab=readme-ov-file
-## URL de acesso a API
-#### https://metmuseum.github.io/
+## Integrantes
+- Gustavo da Silva Rezende
+---
 
-## Métodos disponíveis.
-#### Objects: Uma lista de todos os IDs de Objetos válidos disponíveis para acesso.
-#### Object: Um registro de um objeto, contendo todos os dados de acesso aberto sobre esse objeto, incluindo sua imagem (se a imagem estiver disponível em Acesso Aberto).
-#### Departments: Uma lista de todos os departamentos válidos, com seus IDs e nomes de exibição.
-#### Search: Uma lista de todos os IDs de Objetos para objetos que contêm a consulta de pesquisa nos dados do objeto. --> Não será utilizado.
+## Descrição do Projeto
 
-## Atributos/parametros solicitados por cada método
-##  Objects
-### Identificação, Tipo, Descrição:
-#### total, int, O número total de objetos disponíveis publicamente.
-#### objectIDs, intarray, Uma matriz contendo o ID do objeto de um objeto disponível publicamente.
+Aplicativo Android desenvolvido para fins educacionais, permitindo explorar a coleção pública do **The Metropolitan Museum of Art (The Met)** usando sua **API Open Access**.  
+O app possibilita:
 
-##  Object
-### Identificação, Tipo, Descrição:
-#### objectID, 0-9, O ID de objeto exclusivo para um objeto.
+- Busca de obras de arte por termo (ex.: “Van Gogh”, “Sunflowers”, “Egypt”)  
+- Filtro por obras que possuam imagem  
+- Exibição detalhada de uma obra selecionada: imagem, título, artista, ano, departamento, etc.  
+- Navegação simples e objetiva, ideal para dispositivos Android
 
-##  Departments
-### Identificação, Tipo, Descrição:
-#### departments, array, Um array contendo os objetos JSON que contêm o departmentId e o nome de exibição de cada departamento. O departmentId deve ser usado como parâmetro de consulta no endpoint `/objects`.
-#### departmentId, int, ID do departamento como um inteiro. O departmentId deve ser usado como parâmetro de consulta no endpoint `/objects`.
-#### displayName, string, Nome de exibição de um departamento.
+A API utilizada é **pública, gratuita e não requer autenticação**, permitindo integrações rápidas em apps mobile.
 
-<!-- ##  Search
-### Identificação, Tipo, Descrição:
-#### q, 
-#### isHighlight
-#### 
-#### 
-#### 
-#### 
-#### 
-#### 
-#### 
-#### 
-#### -->
+---
 
-## Dados retornados para cada método.
-##  Objects
-### Identificação, Tipo, Descrição:
-#### 
+## Documentação (Wiki)
 
-##  Object
-### Identificação, Tipo, Descrição:
-####
+A documentação está organizada na Wiki deste repositório:
 
-##  Departments
-### Identificação, Tipo, Descrição:
-#### departments, array, Um array contendo os objetos JSON que contêm o departmentId e o nome de exibição de cada departamento. O departmentId deve ser usado como parâmetro de consulta no endpoint `/objects`.
-#### departmentId, int, ID do departamento como um inteiro. O departmentId deve ser usado como parâmetro de consulta no endpoint `/objects`.
-#### displayName, string, Nome de exibição de um departamento.
+- [Análise da API](https://github.com/Gutsvo/mobile-museu/wiki/Analise-da-API)
+- [Descrição Geral da Aplicação](https://github.com/Gutsvo/mobile-museu/wiki/Descri%C3%A7%C3%A3o-Detalhada-da-Aplica%C3%A7%C3%A3o)
+- [Mapa de Navegação](https://github.com/Gutsvo/mobile-museu/wiki/Mapa-de-Navega%C3%A7%C3%A3o)
+- [Protótipo](https://github.com/Gutsvo/mobile-museu/wiki/Prot%C3%B3tipo)
+- [Telas, Atributos e Widgets](https://github.com/Gutsvo/mobile-museu/wiki/Telas-e-Widgets-Utilizados)
+
+---
